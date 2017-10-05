@@ -2,24 +2,135 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600');
 
+/* Formatação geral */
+
 html, body {
-    font-family: "Times New Roman";
+    font-family: "Crimson Text", "Times New Roman";
     background-color: #F2FFFC;
+    font-size: 120%;
+    line-height: 1.5;
 }
 
+strong {
+    font-weight: bold;
+}
 
-h1 {
-    background-color: #851944; /*Cor de fundo padrão */
-    color: #FAFFFA;
-    font-family: "Open Sans Condensed", sans-serif;
-    text-align: center;
+em {
+    font-style: italic;
 }
 
 h2 {
-    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 30px;
+}
+
+h1, h2 {
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
+
+/* Conteúdo principal do site */
+
+#titulo-principal {
+    background-color: #851944; /*Cor de fundo padrão */
+    color: #FAFFFA;
+    font-size: 60px;
+    text-align: center;
+    padding: 25px;
+    border-bottom: 10px solid #000;
+    text-transform: uppercase;
+}
+
+main a {
+    color: #851944;
+}
+
+.conteudo-principal {
+    width: 750px;
+    margin: 0 auto;
+    padding: 30px 0;
 }
 
 p {
     text-align: justify;
     font-family: "Crimson Text", serif;
+    margin: 20px 0;
+}
+
+/* Conteúdo de navegação e contato */
+
+.navegacao-site {
+    background-color: #3C1D3D;
+    color: #F2FFFC;
+    padding: 20px;
+    text-align: center;
+}
+
+.navegacao-site h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.navegacao-site a {
+    color: inherit;
+    font-family: "Open Sans Condensed", sans-serif;
+    text-transform: lowercase;
+}
+
+.icones-redes-sociais li {
+    display: inline-block;
+}
+
+.icones-redes-sociais a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    font-size: 0; /*or text-indent: -9999px;*/
+}
+
+.github {
+	background-image: url(../_img/github.png);
+}
+
+.twitter {
+	background-image: url(../_img/twitter.png);
+}
+
+.linkedin {
+	background-image: url(../_img/linkedin.png);
+}
+
+/* Informções específicas de cada página */
+
+.posts {
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #CCC;
+}
+
+.citacoes {
+    background-color: #D9E5E3;
+    margin: 20px 40px;
+    width: 250px;
+    box-sizing: border-box;    
+    border: 10px solid #C2CCCA;
+}
+
+.leia-mais {
+    font-size: 24px;
+    margin: 16px;
+    padding: 8px;
+    display: block;
+    text-align: center;
+    background-color: #E6E7E8;
+}
+
+.citacoes, .navegacao-site, footer {
+    padding: 20px;
+}
+
+/* Conteúdo final do site */
+
+#rodape-pagina {
+    background-color: #000;
+    color: #F2FFFC;
 }
